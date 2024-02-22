@@ -32,9 +32,7 @@ document.querySelector("button").addEventListener("click", function (event) {
   const Success = postData().then((res) => {
     console.log(res.msg);
     if (res.msg == "Success") {
-      window.location.replace(
-        "file:///D:/Full%20stack%20journey/Lib_management/login_page/index.html"
-      );
+      window.location.replace("./login_page/index.html");
     } else {
       alert(res.msg);
     }
@@ -43,7 +41,5 @@ document.querySelector("button").addEventListener("click", function (event) {
 const loginbtn = document.querySelector(".loginbtn");
 loginbtn.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.replace(
-    "file:///D:/Full%20stack%20journey/Covid-Vaccination/Front-end/login_page/index.html?"
-  );
+  window.location.replace("./login_page/index.html");
 });
