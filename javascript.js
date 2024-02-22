@@ -207,3 +207,9 @@ document.querySelector(".btn4").addEventListener("click", (event) => {
   };
   getdata();
 });
+const addbook = document
+  .querySelector(".addbook")
+  .addEventListener("click", (event) => {
+    window.location.href =
+      "file:///D:/Full%20stack%20journey/Lib_management/addBooks.html";
+  });

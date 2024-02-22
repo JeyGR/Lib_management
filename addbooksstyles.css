@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  background-color: rgb(237, 244, 255);
+}
+.fields {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inp {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 6px;
+  padding: 5px;
+}
+.btnadd {
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(90, 167, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.btn {
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(90, 167, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 20px;
+  width: 60%;
+  padding-right: 100px;
+}

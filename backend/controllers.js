@@ -93,6 +93,53 @@ const getFourth = async (req, res) => {
     console.log("GetAll executed");
   });
 };
+
+const postone = async (req, res) => {
+  const { title, author, subject, genre } = req.body;
+  await client.query(`insert into books values ($1,$2,$3,$4)`, [
+    title,
+    author,
+    subject,
+    genre,
+  ]);
+  console.log("PostOne is executed");
+  res.json({ msg: "Success" });
+};
+
+const signIn = async (req, res) => {
+  const { phone, pass } = req.body;
+  try {
+    await client.query("insert into signinlib values ($1,$2)", [phone, pass]);
+    console.log("SignIn is executed");
+    res.json({ msg: "Success" });
+  } catch (err) {
+    console.log("Err from singIn", err);
+  }
+};
+
+const logIn = async (req, res) => {
+  const { phone, pass } = req.body;
+
+  await client.query(
+    "select * from signinlib where phone =$1 and pass=$2",
+    [phone, pass],
+    (err, ress) => {
+      const [user] = ress.rows;
+      if (err) {
+        console.log("Err from login", err);
+      } else if (!user) {
+        res.json({ msg: "User Not found, Try signin First" });
+      } else if (user.phone === "1231231231" && user.pass === "admin@123") {
+        console.log("Admin login");
+        res.status(200).json({ msg: "admin" });
+      } else {
+        console.log(ress.rows);
+        res.status(200).json({ msg: "Success" });
+      }
+    }
+  );
+};
+
 module.exports = {
   getAll,
   searchOne,
@@ -100,4 +147,7 @@ module.exports = {
   getSecond,
   getThird,
   getFourth,
+  postone,
+  signIn,
+  logIn,
 };
