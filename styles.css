@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.maindiv {
+  background-color: #f6faff;
+  height: 100%;
+  text-align: center;
+}
+.maintb {
+  margin-left: 100px;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  /* border-collapse: separate; */
+  border-spacing: 50px;
+}
+td {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 14px 0px rgba(215, 224, 251, 0.25);
+}
+
+.searchitem {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btnsearch {
+  padding: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: none;
+  background-color: rgb(78, 140, 255);
+  border-radius: 10px;
+  color: white;
+}
+.btn {
+  padding: 4px;
+  /* border: ; */
+  background-color: white;
+  border-radius: 4px;
+}
