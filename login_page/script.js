@@ -33,7 +33,8 @@ document.querySelector("button").addEventListener("click", function (event) {
     if (res.msg == "Success") {
       window.location.replace("userindex.html");
     } else if (res.msg == "admin") {
-      window.location.href = "./signin_page/index.html";
+      window.location.href =
+        "file:///D:/Full%20stack%20journey/Lib_management/index.html";
     } else {
       alert(res.msg);
     }
@@ -43,5 +44,7 @@ const signinbtn = document.querySelector(".singinbtn");
 
 signinbtn.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.replace("./login_page/index.html");
+  window.location.replace(
+    "D:Full stack journeyLib_managementsignin_pageindex.html"
+  );
 });
