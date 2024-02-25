@@ -1,4 +1,4 @@
-.main {
+.mainlogin {
   height: 100vh;
   width: 100wh;
   display: flex;
@@ -26,7 +26,7 @@ form input {
   margin: none;
   border-radius: 6px;
 }
-.singinbtn {
+.signinbtnn {
   padding: 5px;
   padding-left: 13px;
   padding-right: 13px;

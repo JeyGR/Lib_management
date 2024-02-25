@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.main {
+.mainaddbooks {
   height: 100vh;
   background-color: rgb(237, 244, 255);
 }
@@ -27,7 +27,7 @@
   border-radius: 5px;
   color: white;
 }
-.btn {
+.btnn {
   padding: 8px;
   padding-left: 10px;
   padding-right: 10px;

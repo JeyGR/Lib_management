@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library_Management</title>
+    <link rel="stylesheet" href="styles_signin.css" />
+    <link rel="stylesheet" href="styleslogin.css" />
+    <link rel="stylesheet" href="addbooksstyles.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="maindiv">
+    <div class="maindiv hide">
       <div class="topdiv">
         <div class="searchdiv">
           <input
@@ -18,7 +21,7 @@
           />
           <button class="btnsearch">Search</button>
         </div>
-        <button class="addbook btnsearch">Add book</button>
+        <button class="addbookadminbtn btnsearch hide">Add book</button>
       </div>
       <h2>Library Management</h2>
       <div class="content">
@@ -68,6 +71,208 @@
       <br />
       <br />
     </div>
-    <script src="javascript.js"></script>
+
+    <!-- signin -->
+
+    <div class="mainsignin">
+      <div class="group">
+        <h3
+          style="
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: -5px;
+          "
+        >
+          Sign in
+        </h3>
+        <form action="" style="text-align: center" id="myForm">
+          <label
+            for="Name"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Name :</label
+          >
+          <input type="text" class="Name" placeholder="Enter your name" /><br />
+          <br />
+          <label
+            for="Age"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Age :</label
+          >
+          <input type="number" class="Age" placeholder="Enter your age" /><br />
+          <br />
+          <label
+            for="Number:"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Phone number :</label
+          >
+          <input
+            type="number"
+            class="Number"
+            placeholder="Enter your contact number"
+          /><br />
+          <br />
+          <label
+            for="pass"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Password :</label
+          >
+          <input
+            type="password"
+            class="pass"
+            placeholder="Enter your Password "
+          /><br />
+          <br />
+          <button
+            type="submit"
+            style="
+              padding-top: 7px;
+              padding-bottom: 7px;
+              border-radius: 6px;
+              padding-left: 30px;
+              padding-right: 30px;
+              background-color: #4075ff;
+              color: white;
+              border: none;
+              outline: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+            class="signinbtnpage"
+          >
+            Sign In</button
+          ><br /><br />
+          <button class="loginbtn">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- login -->
+
+    <div class="mainlogin hide">
+      <div class="group">
+        <h3
+          style="
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: -5px;
+          "
+        >
+          Login in
+        </h3>
+        <form action="" style="text-align: center" id="myForm">
+          <label
+            for="Name"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Name :</label
+          >
+          <input type="text" class="Name" placeholder="Enter your name" /><br />
+          <br />
+          <label
+            for="Number:"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Phone number :</label
+          >
+          <input
+            type="number"
+            class="Numberlogin"
+            placeholder="Enter your contact number"
+          /><br />
+          <br />
+          <label
+            for="pass"
+            style="
+              display: block;
+              text-align: left;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: 7px;
+            "
+            >Password :</label
+          >
+          <input
+            type="password"
+            class="passlogin"
+            placeholder="Enter your Password "
+          /><br />
+          <br />
+          <button
+            type="submit"
+            style="
+              padding-top: 7px;
+              padding-bottom: 7px;
+              border-radius: 6px;
+              padding-left: 30px;
+              padding-right: 30px;
+              background-color: #4075ff;
+              color: white;
+              border: none;
+              outline: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+            class="loginbtnpage"
+          >
+            LogIn</button
+          ><br />
+          <br />
+          <button class="signinbtnn">Signin</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- addbooks -->
+
+    <div class="mainaddbooks hide">
+      <div class="nav">
+        <button class="btnback btnn">Back</button>
+        <h2
+          style="
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Add new Book
+        </h2>
+      </div>
+      <br />
+      <br />
+      <div class="fields">
+        <input type="text" placeholder="Title" class="intitle inp" />
+        <input type="text" placeholder="Author" class="inauthor inp" />
+        <input type="text" placeholder="Subject" class="insubject inp" />
+        <input type="text" placeholder="Genre" class="ingenre inp" />
+        <button class="btnadd">Add Book</button>
+      </div>
+    </div>
+    <!-- <script src="javascript.js"></script>
+    <script src="scriptsignin.js"></script>
+    <script src="scriptlogin.js"></script>
+    <script src="javas.js"></script> -->
+    <script src="mainjava.js"></script>
   </body>
 </html>
