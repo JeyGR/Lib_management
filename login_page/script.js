@@ -31,7 +31,9 @@ document.querySelector("button").addEventListener("click", function (event) {
   const Success = postData().then((res) => {
     console.log(res.msg);
     if (res.msg == "Success") {
-      window.location.replace("userindex.html");
+      window.location.replace(
+        "file:///D:/Full%20stack%20journey/Lib_management/userindex.html"
+      );
     } else if (res.msg == "admin") {
       window.location.href =
         "file:///D:/Full%20stack%20journey/Lib_management/index.html";
@@ -45,6 +47,6 @@ const signinbtn = document.querySelector(".singinbtn");
 signinbtn.addEventListener("click", (event) => {
   event.preventDefault();
   window.location.replace(
-    "D:Full stack journeyLib_managementsignin_pageindex.html"
+    "file:///D:/Full%20stack%20journey/Lib_management/signin_page/index.html"
   );
 });
