@@ -53,6 +53,16 @@ td {
   padding-left: 30px;
   padding-right: 30px;
 }
+.logoutbtnmainpage {
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(90, 167, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
 .hide {
   display: none;
 }
