@@ -3,6 +3,7 @@ const maindiv = document.querySelector(".maindiv");
 const mainsignin = document.querySelector(".mainsignin");
 const mainlogin = document.querySelector(".mainlogin");
 const mainaddbooks = document.querySelector(".mainaddbooks");
+const logoutmainpage = document.querySelector(".logoutbtnmainpage");
 
 const changetologinpage = () => {
   maindiv.classList.add("hide");
@@ -430,5 +431,9 @@ document.querySelector(".signinbtnpage").addEventListener("click", (event) => {
 
 document.querySelector(".loginbtnpage").addEventListener("click", (event) => {
   event.preventDefault();
+  funcofloginpage();
+});
+logoutmainpage.addEventListener("click", (event) => {
+  changetologinpage();
   funcofloginpage();
 });
